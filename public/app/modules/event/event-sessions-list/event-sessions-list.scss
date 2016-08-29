@@ -1,0 +1,12 @@
+em-event-sessions-list {
+    .session-list {
+        margin-top: 10px;
+
+        md-list-item {
+            border-bottom: 1px solid #dedede;
+        }
+        md-list-item:last-child {
+            border-bottom: none;
+        }
+    }
+}

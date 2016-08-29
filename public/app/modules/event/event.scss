@@ -1,0 +1,57 @@
+em-event-preview,
+em-event-view {
+    md-card-title-text {
+        .md-headline a  {
+            color: #000;
+            padding-top: 10px;
+            padding-left: 10px;
+            display: block;
+        }
+        h1.md-headline {
+            margin-top: 10px;
+            margin-left: 10px;
+            color: #000;
+            font-size: 30px;
+        }
+        .md-subhead .time {
+            color: #5f5f5f;
+            font-size: 13px;
+            padding-left: 10px;
+        }
+    }
+
+    md-card-content {
+        .peoples .sum {
+            padding-left: 20px;
+            background: url('/images/user.png') top left no-repeat;
+            background-size: contain;
+            color: #6f6f6f;
+            font-size: 15px;
+        }
+    }
+
+    .event-status {
+        display: inline-block;
+        padding: 7px;
+        font-size: 12px;
+        border-radius: 3px;
+        margin-left: 10px;
+        position: relative;
+        top: -5px;
+
+        &.sold-out,
+        &.closed {
+            background: #fff1f1;
+            color: #d2a8a8;
+        }
+        &.open {
+            background: #deefe0;
+            color: #7dad84;
+        }
+        &.draft {
+            background: #ececec;
+            color: #a7a7a7;
+        }
+    }
+
+}

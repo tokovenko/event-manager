@@ -1,0 +1,13 @@
+em-event-view {
+    >md-card {
+        padding: 10px
+    }
+    md-dialog-container {
+        .md-headline {
+             text-transform: uppercase;
+             text-align: center;
+             margin-bottom: 0;
+             padding-bottom: 0;
+        }
+    }
+}

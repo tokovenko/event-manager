@@ -1,0 +1,16 @@
+em-event-session-preview {
+     .time {
+        color: #5f5f5f;
+        font-size: 13px;
+        padding-left: 10px;
+        position: relative;
+        top: 2px;
+    }
+
+    @media (max-width: 599px) {
+         .time {
+            padding-left: 0px;
+        }
+    }
+
+}

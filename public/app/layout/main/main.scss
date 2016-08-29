@@ -1,0 +1,46 @@
+#page {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+header {
+    padding: 20px 0;
+
+    .logo {
+
+        img {
+            width: 100px;
+            position: relative;
+            left: 5px;
+        }
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #000;
+        }
+
+    }
+
+    .menu {
+        text-align: right;
+    }
+
+}
+
+
+
+@media (max-width: 599px) {
+    #page {
+        width: auto;
+    }
+    header {
+        .logo {
+            margin: 0 auto 10px auto;
+        }
+        .menu {
+            text-align: center;
+        }
+    }
+}

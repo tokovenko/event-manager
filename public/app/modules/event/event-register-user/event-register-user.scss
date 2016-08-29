@@ -1,0 +1,25 @@
+em-event-register-user {
+    .form {
+        width: 600px;
+
+        md-input-container {
+            margin: 0;
+        }
+
+        .btn-container {
+            text-align: right;
+        }
+
+        em-event-date {
+            font-size: 13px;
+            color: #868686;
+            margin-top: 3px;
+        }
+    }
+
+    @media (max-width: 599px) {
+         .form {
+            width: auto;
+        }
+    }
+}
