@@ -7,3 +7,4 @@ Event Manager.  Application for managing events and sessions. Angular 1.5, Angul
     npm start
 
 http://localhost:3000
+test@test.com 123
