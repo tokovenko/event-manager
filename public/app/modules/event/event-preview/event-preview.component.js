@@ -50,7 +50,7 @@ class EventPreviewController {
 
 EventPreviewController.inject = ['UserService','EventService','$mdDialog'];
 
-module.exports = {
+export default {
     template: `
         <md-card layout="column">
             <md-card-title-text>

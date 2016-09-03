@@ -1,6 +1,5 @@
 class EventPageController {
     constructor(EventService) {
-
         this.eventService = EventService;
 
         this.eventService
@@ -8,13 +7,12 @@ class EventPageController {
             .then(event => {
                 this.event = event;
             });
-
     }
 }
 
 EventPageController.inject = ['EventService'];
 
-module.exports = {
+export default {
     template: `
         <div class="page">
             <em-event-view

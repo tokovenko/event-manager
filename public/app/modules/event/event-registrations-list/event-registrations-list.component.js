@@ -3,7 +3,7 @@ import styles from './event-registrations-list.scss';
 
 class EventRegistrationsListController {}
 
-module.exports = {
+export default {
     template: `
         <div class="registrations-list">
             <md-list flex>

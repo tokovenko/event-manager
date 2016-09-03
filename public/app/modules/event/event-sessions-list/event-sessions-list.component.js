@@ -3,7 +3,7 @@ import styles from './event-sessions-list.scss';
 
 class EventSessionsListController {}
 
-module.exports = {
+export default {
     template: `
         <div class="session-list">
             <md-list flex>

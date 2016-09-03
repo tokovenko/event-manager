@@ -14,7 +14,7 @@ import EventDateCompnent from './event-date/event-date.component';
 import EventRegisterUserCompnent from './event-register-user/event-register-user.component';
 import EventFormCompnent from './event-form/event-form.component';
 
-module.exports = angular
+export default angular
     .module('app.event', [])
     .service('EventService', EventService)
     .component('emEventView', EventViewComponent)

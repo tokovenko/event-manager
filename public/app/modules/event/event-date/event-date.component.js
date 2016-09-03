@@ -15,7 +15,7 @@ class EventDateController {
 EventDateController.inject = ['$filter'];
 
 
-module.exports = {
+export default {
     template: `
         <div class="time">{{::vm.getDate(vm.start)}} - {{::vm.getDate(vm.end)}}</div>
     `,

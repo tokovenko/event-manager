@@ -1,4 +1,4 @@
-module.exports = function($stateProvider, $urlRouterProvider) {
+export default function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise("/");
 
@@ -15,7 +15,7 @@ module.exports = function($stateProvider, $urlRouterProvider) {
               $scope.eventId = $stateParams.id;
           }],
           template: `
-                <em-event-page event-id="eventId"></em-event-page>
+            <em-event-page event-id="eventId"></em-event-page>
           `
         })
         .state('signin', {

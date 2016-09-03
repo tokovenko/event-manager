@@ -5,7 +5,7 @@ class EventSessionPreviewController {
 
 EventSessionPreviewController.inject = ['EventService'];
 
-module.exports = {
+export default {
     template: `
         <div class="md-list-item-text event-session-preview" layout="row" layout-xs="column">
             <div class="title">

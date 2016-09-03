@@ -4,7 +4,7 @@ import userModule from './../../modules/user';
 
 class MainLayoutController {}
 
-module.exports = angular
+export default angular
     .module('app.layout.main', [userModule])
     .directive('emMainLayout', function() {
         return {

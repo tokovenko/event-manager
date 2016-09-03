@@ -46,18 +46,41 @@
 
 	'use strict';
 	
-	var angular = __webpack_require__(1);
-	var router = __webpack_require__(3);
-	var ngMaterial = __webpack_require__(4);
+	var _angular = __webpack_require__(1);
 	
-	var ngMaterialCss = __webpack_require__(10);
-	var sass = __webpack_require__(14);
+	var _angular2 = _interopRequireDefault(_angular);
 	
-	var pagesModule = __webpack_require__(16);
-	var routing = __webpack_require__(54);
-	var mainLayout = __webpack_require__(55);
+	var _angularUiRouter = __webpack_require__(3);
 	
-	angular.module('app', [pagesModule, ngMaterial, router, mainLayout]).config(routing);
+	var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
+	
+	var _angularMaterial = __webpack_require__(4);
+	
+	var _angularMaterial2 = _interopRequireDefault(_angularMaterial);
+	
+	var _angularMaterial3 = __webpack_require__(10);
+	
+	var _angularMaterial4 = _interopRequireDefault(_angularMaterial3);
+	
+	var _app = __webpack_require__(14);
+	
+	var _app2 = _interopRequireDefault(_app);
+	
+	var _pages = __webpack_require__(16);
+	
+	var _pages2 = _interopRequireDefault(_pages);
+	
+	var _app3 = __webpack_require__(54);
+	
+	var _app4 = _interopRequireDefault(_app3);
+	
+	var _main = __webpack_require__(55);
+	
+	var _main2 = _interopRequireDefault(_main);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	_angular2.default.module('app', [_angularMaterial2.default, _angularUiRouter2.default, _main2.default, _pages2.default]).config(_app4.default);
 
 /***/ },
 /* 1 */
@@ -73313,6 +73336,10 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	var _angular = __webpack_require__(1);
 	
 	var _angular2 = _interopRequireDefault(_angular);
@@ -73339,13 +73366,17 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	module.exports = _angular2.default.module('app.pages', [_event2.default, _user2.default]).component('emIndexPage', _index2.default).component('emEventPage', _event4.default).component('emSigninPage', _signin2.default).name;
+	exports.default = _angular2.default.module('app.pages', [_event2.default, _user2.default]).component('emIndexPage', _index2.default).component('emEventPage', _event4.default).component('emSigninPage', _signin2.default).name;
 
 /***/ },
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	var _angular = __webpack_require__(1);
 	
@@ -73401,7 +73432,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	module.exports = _angular2.default.module('app.event', []).service('EventService', _event4.default).component('emEventView', _eventView2.default).component('emEventSessionsList', _eventSessionsList2.default).component('emEventSessionPreview', _eventSessionPreview2.default).component('emEventRegistrationsList', _eventRegistrationsList2.default).component('emEventRegistrationPreview', _eventRegistrationPreview2.default).component('emEventPreview', _eventPreview2.default).component('emEventList', _eventList2.default).component('emEventDate', _eventDate2.default).component('emEventRegisterUser', _eventRegisterUser2.default).component('emEventForm', _eventForm2.default).name;
+	exports.default = _angular2.default.module('app.event', []).service('EventService', _event4.default).component('emEventView', _eventView2.default).component('emEventSessionsList', _eventSessionsList2.default).component('emEventSessionPreview', _eventSessionPreview2.default).component('emEventRegistrationsList', _eventRegistrationsList2.default).component('emEventRegistrationPreview', _eventRegistrationPreview2.default).component('emEventPreview', _eventPreview2.default).component('emEventList', _eventList2.default).component('emEventDate', _eventDate2.default).component('emEventRegisterUser', _eventRegisterUser2.default).component('emEventForm', _eventForm2.default).name;
 
 /***/ },
 /* 18 */
@@ -73415,6 +73446,10 @@
 /***/ function(module, exports) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
@@ -73582,13 +73617,17 @@
 	
 	EventService.inject = ['$q', '$http'];
 	
-	module.exports = EventService;
+	exports.default = EventService;
 
 /***/ },
 /* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
@@ -73662,7 +73701,7 @@
 	
 	EventViewController.inject = ['EventService', '$mdDialog', '$timeout', 'UserService'];
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <md-card layout="column">\n\n            <md-card-title-text>\n                <h1 class="md-headline">\n                    {{vm.event.title}}\n                </h1>\n                <span class="md-subhead">\n                    <em-event-date\n                        start="vm.event.startTime"\n                        end="vm.event.endTime"\n                    ><em-event-date>\n                </span>\n            </md-card-title-text>\n\n            <md-card-content>\n                <div layout="row">\n                    <div class="peoples">\n                        <div class="sum" title="Registered / Limit">\n                            {{::vm.getSumOccupiedSeats(vm.event.registrationLimit, vm.event.remainingSeats)}} / {{::vm.event.registrationLimit}}\n                        </div>\n                    </div>\n                    <div class="status">\n                        <span\n                            class="event-status"\n                            ng-class="::vm.getStatusClassName(vm.event.status)"\n                        >\n                            {{vm.getStatusTitle(vm.event.status)}}\n                        </span>\n                    </div>\n                </div>\n                <em-event-sessions-list\n                    ng-if="vm.event.sessions.length>0"\n                    sessions="vm.event.sessions"\n                ></em-event-sessions-list>\n                <em-event-registrations-list\n                    ng-if="vm.isAutorized() && vm.event.registrations.length>0"\n                    event="vm.event"\n                ></em-event-registrations-list>\n            </md-card-content>\n\n            <div ng-if="vm.isAvailableToRegister(vm.event)">\n                <md-card-actions layout="row" layout-align="center">\n                    <md-button class="md-raised md-primary" ng-click="vm.openDialog($event)">Register</md-button>\n                </md-card-actions>\n\n                <div style="visibility: hidden">\n                    <div class="md-dialog-container" id="register-user">\n                      <md-dialog layout-padding>\n                        <h1 class="md-headline">\n                          Registration on: {{vm.event.title}}\n                        </h1>\n                        <br>\n                        <em-event-register-user\n                            event="vm.event"\n                            on-registered-user="vm.closeDialog()">\n                        ></em-event-register-user>\n                      </md-dialog>\n                    </div>\n                </div>\n            </div>\n\n        </md-card>\n    ',
 	    controller: EventViewController,
 	    controllerAs: 'vm',
@@ -73684,6 +73723,10 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	var _angular = __webpack_require__(1);
 	
 	var _angular2 = _interopRequireDefault(_angular);
@@ -73700,7 +73743,7 @@
 	    _classCallCheck(this, EventSessionsListController);
 	};
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div class="session-list">\n            <md-list flex>\n              <md-subheader class="md-no-sticky">Event sessions</md-subheader>\n              <md-list-item ng-repeat="session in vm.sessions">\n                <em-event-session-preview session="session"></em-event-session-preview>\n              </md-list-item>\n            </md-list>\n        </div>\n    ',
 	    controller: EventSessionsListController,
 	    controllerAs: 'vm',
@@ -73722,6 +73765,10 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	var _eventSessionPreview = __webpack_require__(28);
 	
 	var _eventSessionPreview2 = _interopRequireDefault(_eventSessionPreview);
@@ -73736,7 +73783,7 @@
 	
 	EventSessionPreviewController.inject = ['EventService'];
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div class="md-list-item-text event-session-preview" layout="row" layout-xs="column">\n            <div class="title">\n                {{vm.session.title}}\n            </div>\n            <em-event-date\n                start="vm.session.startTime"\n                end="vm.session.endTime"\n            ></em-event-date>\n        </div>\n    ',
 	    controller: EventSessionPreviewController,
 	    controllerAs: 'vm',
@@ -73758,6 +73805,10 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	var _angular = __webpack_require__(1);
 	
 	var _angular2 = _interopRequireDefault(_angular);
@@ -73774,7 +73825,7 @@
 	    _classCallCheck(this, EventRegistrationsListController);
 	};
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div class="registrations-list">\n            <md-list flex>\n              <md-subheader class="md-no-sticky">Event registrations</md-subheader>\n              <md-list-item ng-repeat="registration in vm.event.registrations">\n                <em-event-registration-preview\n                    registration="registration"\n                    event="vm.event"\n                ></em-event-registration-preview>\n              </md-list-item>\n            </md-list>\n        </div>\n    ',
 	    controller: EventRegistrationsListController,
 	    controllerAs: 'vm',
@@ -73795,6 +73846,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
@@ -73843,7 +73898,7 @@
 	
 	EventRegistrationPreviewController.inject = ['EventService'];
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div class="md-list-item-text event-registration-preview" layout="row" layout-xs="column">\n            <div class="info" flex="30" flex-xs="100">\n                <ul>\n                    <li><b>First Name:</b> {{vm.registration.firstName}}</li>\n                    <li><b>Last Name:</b> {{vm.registration.lastName}}</li>\n                    <li><b>Email:</b> {{vm.registration.email}}</li>\n                </ul>\n            </div>\n            <div class="info" flex="30" flex-xs="100">\n                <ul>\n                    <li><b>Phone:</b> {{vm.registration.phone}}</li>\n                    <li><b>Company:</b> {{vm.registration.company}}</li>\n                </ul>\n            </div>\n            <div class="info" flex="30" flex-xs="100" ng-if="vm.registration.sessions.length>0">\n                <ul>\n                    <li>\n                        <b>Session:</b> {{vm.getSessionsTitles(vm.registration.sessions, vm.event.sessions)}}\n                    </li>\n                </ul>\n            </div>\n            <div flex="5" flex-xs="100">\n                <md-button\n                    class="md-raised remove"\n                    ng-click="vm.removeRegistration(vm.event, vm.registration)"\n                >х</md-button>\n            </div>\n\n        </div>\n    ',
 	    controller: EventRegistrationPreviewController,
 	    controllerAs: 'vm',
@@ -73865,6 +73920,10 @@
 /***/ function(module, exports) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
@@ -73930,7 +73989,7 @@
 	
 	EventPreviewController.inject = ['UserService', 'EventService', '$mdDialog'];
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <md-card layout="column">\n            <md-card-title-text>\n                <span class="md-headline">\n                    <a ui-sref="event({id: vm.event.id})">{{vm.event.title}}</a>\n                </span>\n                <span class="md-subhead">\n                    <em-event-date\n                        start="vm.event.startTime"\n                        end="vm.event.endTime"\n                    ><em-event-date>\n                </span>\n            </md-card-title-text>\n            <md-card-content layout="row">\n                <div class="peoples">\n                    <div class="sum" title="Registered / Limit">\n                        {{::vm.getSumOccupiedSeats(vm.event.registrationLimit, vm.event.remainingSeats)}} / {{::vm.event.registrationLimit}}\n                    </div>\n                </div>\n                <div class="status">\n                    <span\n                        class="event-status"\n                        ng-class="::vm.getStatusClassName(vm.event.status)"\n                    >\n                        {{vm.getStatusTitle(vm.event.status)}}\n                    </span>\n                </div>\n            </md-card-content>\n            <md-card-actions layout="row" layout-align="center" ng-if="vm.isAutorized()">\n                <md-button class="md-raised md-mini left" ng-click="vm.openDialog($event, vm.event)">edit</md-button>\n                <md-button class="md-raised md-mini right" ng-click="vm.removeEvent(vm.event)">remove</md-button>\n            </md-card-actions>\n        </md-card>\n    ',
 	    controller: EventPreviewController,
 	    controllerAs: 'vm',
@@ -73945,13 +74004,17 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var EventListController = function EventListController() {
 	    _classCallCheck(this, EventListController);
 	};
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div layout="row" layout-xs="column" layout-wrap="wrap">\n          <div class="event-preview" ng-repeat="event in vm.events" flex="33" flex-xs="100">\n            <em-event-preview event="event"></em-event-preview>\n          </div>\n        </div>\n    ',
 	    controller: EventListController,
 	    controllerAs: 'vm',
@@ -73965,6 +74028,10 @@
 /***/ function(module, exports) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
@@ -73991,7 +74058,7 @@
 	
 	EventDateController.inject = ['$filter'];
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div class="time">{{::vm.getDate(vm.start)}} - {{::vm.getDate(vm.end)}}</div>\n    ',
 	    controller: EventDateController,
 	    controllerAs: 'vm',
@@ -74263,6 +74330,10 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	var _angular = __webpack_require__(1);
 	
 	var _angular2 = _interopRequireDefault(_angular);
@@ -74285,7 +74356,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	module.exports = _angular2.default.module('app.user', [_angularCookies2.default]).service('UserService', _user2.default).component('emUserMenu', _userMenu2.default).component('emUserSignIn', _userSignIn2.default).name;
+	exports.default = _angular2.default.module('app.user', [_angularCookies2.default]).service('UserService', _user2.default).component('emUserMenu', _userMenu2.default).component('emUserSignIn', _userSignIn2.default).name;
 
 /***/ },
 /* 46 */
@@ -74799,6 +74870,10 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var IndexPageController = function IndexPageController($mdDialog, EventService) {
@@ -74813,27 +74888,11 @@
 	    });
 	
 	    this.selected = 'red';
-	
-	    this.isDialogOpen = false;
-	    this.openDialog = function (ev) {
-	        $mdDialog.show({
-	            controller: TestController,
-	            contentElement: '#myDialog',
-	            parent: angular.element(document.body),
-	            targetEvent: ev,
-	            clickOutsideToClose: true
-	        });
-	    };
-	    this.closeDialog = function () {
-	        this.isDialogOpen = false;
-	    };
-	
-	    console.log('test...');
 	};
 	
 	IndexPageController.inject = ['$mdDialog', 'EventService'];
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div ng-cloak>\n            <em-event-list events="vm.events"><em-event-list>\n        </div>\n    ',
 	    controller: IndexPageController,
 	    controllerAs: 'vm'
@@ -74844,6 +74903,10 @@
 /***/ function(module, exports) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -74861,7 +74924,7 @@
 	
 	EventPageController.inject = ['EventService'];
 	
-	module.exports = {
+	exports.default = {
 	    template: '\n        <div class="page">\n            <em-event-view\n                ng-if="vm.event"\n                event="vm.event"\n            ></em-event-view>\n        </div>\n    ',
 	    controller: EventPageController,
 	    controllerAs: 'vm',
@@ -74876,14 +74939,18 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var SigninPageController = function SigninPageController() {
 	    _classCallCheck(this, SigninPageController);
 	};
 	
-	module.exports = {
-	    template: '\n        <div class="page">\n            <div ng-cloak>\n                <em-user-sign-in><em-user-sign-in>\n            </div>\n        </div>\n    ',
+	exports.default = {
+	    template: '\n      <div class="page">\n          <div ng-cloak>\n              <em-user-sign-in><em-user-sign-in>\n          </div>\n      </div>\n  ',
 	    controller: SigninPageController,
 	    controllerAs: 'vm'
 	};
@@ -74894,7 +74961,11 @@
 
 	"use strict";
 	
-	module.exports = function ($stateProvider, $urlRouterProvider) {
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	exports.default = function ($stateProvider, $urlRouterProvider) {
 	
 	  $urlRouterProvider.otherwise("/");
 	
@@ -74906,18 +74977,24 @@
 	    controller: ['$scope', '$stateParams', function ($scope, $stateParams) {
 	      $scope.eventId = $stateParams.id;
 	    }],
-	    template: "\n                <em-event-page event-id=\"eventId\"></em-event-page>\n          "
+	    template: "\n            <em-event-page event-id=\"eventId\"></em-event-page>\n          "
 	  }).state('signin', {
 	    url: "/signin",
 	    template: "\n                <em-signin-page></em-signin-page>\n          "
 	  });
 	};
+	
+	;
 
 /***/ },
 /* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 	
 	var _angular = __webpack_require__(1);
 	
@@ -74939,7 +75016,7 @@
 	    _classCallCheck(this, MainLayoutController);
 	};
 	
-	module.exports = _angular2.default.module('app.layout.main', [_user2.default]).directive('emMainLayout', function () {
+	exports.default = _angular2.default.module('app.layout.main', [_user2.default]).directive('emMainLayout', function () {
 	    return {
 	        restrict: 'E',
 	        transclude: true,

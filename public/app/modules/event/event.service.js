@@ -145,4 +145,4 @@ class EventService {
 
 EventService.inject = ['$q','$http'];
 
-module.exports = EventService;
+export default EventService;

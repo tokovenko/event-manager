@@ -27,7 +27,7 @@ class EventRegistrationPreviewController {
 
 EventRegistrationPreviewController.inject = ['EventService'];
 
-module.exports = {
+export default {
     template: `
         <div class="md-list-item-text event-registration-preview" layout="row" layout-xs="column">
             <div class="info" flex="30" flex-xs="100">

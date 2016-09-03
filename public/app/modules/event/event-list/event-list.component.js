@@ -1,6 +1,6 @@
 class EventListController {}
 
-module.exports = {
+export default {
     template: `
         <div layout="row" layout-xs="column" layout-wrap="wrap">
           <div class="event-preview" ng-repeat="event in vm.events" flex="33" flex-xs="100">

@@ -1,14 +1,14 @@
-var angular = require('angular');
-var router = require('angular-ui-router');
-var ngMaterial = require('angular-material');
+import angular from 'angular';
+import router from 'angular-ui-router';
+import ngMaterial from 'angular-material';
 
-var ngMaterialCss = require('angular-material/angular-material.css');
-var sass = require('./app.scss');
+import ngMaterialCss from 'angular-material/angular-material.css';
+import sass from './app.scss';
 
-var pagesModule = require('./pages');
-var routing = require('./app.routes');
-var mainLayout = require('./layout/main/main.component');
+import pagesModule from './pages';
+import routing from './app.routes';
+import mainLayout from './layout/main/main.component';
 
 angular
-    .module('app', [pagesModule, ngMaterial, router, mainLayout])
+    .module('app', [ngMaterial, router, mainLayout, pagesModule])
     .config(routing);

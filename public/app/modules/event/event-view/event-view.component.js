@@ -46,8 +46,7 @@ class EventViewController {
 
 EventViewController.inject = ['EventService','$mdDialog','$timeout','UserService'];
 
-
-module.exports = {
+export default {
     template: `
         <md-card layout="column">
 

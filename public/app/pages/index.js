@@ -7,7 +7,7 @@ import IndexPageComponent from './index/index.component';
 import EventPageComponent from './event/event.component';
 import SigninPageComponent from './signin/signin.component';
 
-module.exports = angular
+export default angular
     .module('app.pages', [EventModule, UserModule])
     .component('emIndexPage', IndexPageComponent)
     .component('emEventPage', EventPageComponent)

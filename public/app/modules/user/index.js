@@ -5,7 +5,7 @@ import UserService from './user.service';
 import UserMenuComponent from './user-menu/user-menu.component';
 import UserSignInComponent from './user-sign-in/user-sign-in.component';
 
-module.exports = angular
+export default angular
     .module('app.user', [angularCookies])
     .service('UserService', UserService)
     .component('emUserMenu', UserMenuComponent)
